@@ -1,7 +1,9 @@
 # Literature Review: Analysis of the Popularity of Process and Product Metrics for Quality Evaluation and Maintenance
 
 ## Overview
-This literature review synthesizes key findings from academic works that explore the development, application, and validation of process and product metrics in software engineering. \nIt's just a draft btw
+This literature review synthesizes key findings from academic works that explore the development, application, and validation of process and product metrics in software engineering. 
+
+It's just a draft btw
 
 ## Articles Reviewed
 
