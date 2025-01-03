@@ -23,12 +23,10 @@ Building on these insights, this thesis aims to:
 
 The review of foundational works, including studies by Basili, Dijkman, and Parida, provides a robust starting point for this analysis. By integrating empirical findings with theoretical frameworks, this research seeks to contribute to the understanding of metric effectiveness and popularity in software development.
 
-## Structure of the Thesis
+## Structure of Work with Thesis
 
 The thesis will proceed as follows:
 1. A literature review summarizing key contributions and debates surrounding process and product metrics.
 2. Methodology for analyzing metric adoption across various domains and projects.
 3. Empirical findings on the factors influencing metric popularity.
-4. Recommendations for integrating effective metrics into quality evaluation and maintenance strategies.
-
-This work aspires to bridge the gap between academic research and practical application, offering insights into the evolving landscape of software metrics.
+4. Recommendations for integrating effective metrics into quality evaluation and maintenance strategies. (not sure if this will be formulated as recommended metrics for specific areas or something else)
