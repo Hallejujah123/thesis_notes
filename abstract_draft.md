@@ -21,7 +21,7 @@ Building on these insights, this thesis aims to:
 2. Evaluate the impact of these metrics on quality evaluation and maintenance practices.
 3. Identify trends and best practices that influence metric selection in industry and academia.
 
-By integrating empirical findings with theoretical frameworks, this research seeks to contribute to the understanding of metric effectiveness and popularity in software development.
+The review of foundational works, including studies by Basili, Dijkman, and Parida, provides a robust starting point for this analysis. By integrating empirical findings with theoretical frameworks, this research seeks to contribute to the understanding of metric effectiveness and popularity in software development.
 
 ## Structure of the Thesis
 
