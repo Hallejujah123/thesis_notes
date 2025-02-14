@@ -4,57 +4,98 @@
 
 ### 1.1 Background and Motivation
 
-Software engineering relies on metrics to ensure high-quality development and maintainability. Software metrics provide quantitative insight into the processes and products of software development, aiding in fault prediction and maintainability evaluation. Understanding which metrics gain prominence and why is essential for improving software quality and supporting decision-making in software engineering. This systematic literature review (SLR) investigates the popularity of process and product metrics for quality evaluation and maintenance.
+Software quality evaluation and maintenance have become crucial in modern software engineering, as the complexity of software systems continues to grow. Software metrics provide a structured approach to assessing software quality by offering quantitative measures for various attributes, including maintainability, reliability, and fault-proneness. These metrics are widely used in both academia and industry to aid software engineers in identifying potential weaknesses in code, optimizing development practices, and improving overall software quality.
+
+Understanding the popularity and effectiveness of specific software metrics is essential for organizations striving to enhance their software development lifecycle. Despite the availability of numerous software metrics, only a subset gains widespread adoption due to factors such as ease of use, predictive accuracy, and industry acceptance. Process and product metrics play a vital role in ensuring software maintainability, as they provide insights into the internal structure of a system and help anticipate potential defects before they impact the final product.
+
+This study investigates the adoption and effectiveness of process and product metrics for software quality evaluation and maintenance. By analyzing existing literature, this research aims to identify widely used metrics, assess their empirical validation, and explore the factors contributing to their popularity.
 
 ### 1.2 Research Objectives
 
-The primary objectives of this SLR are:
+The objective of this systematic literature review is to provide a comprehensive analysis of software metrics used for quality evaluation and maintenance. The study aims to:
 
-- To identify widely used process and product metrics in software engineering.
-- To analyze the empirical evidence supporting the effectiveness of these metrics.
-- To understand the factors influencing the popularity of certain metrics over others.
+- Identify process and product metrics that are widely utilized in software engineering.
+- Assess the empirical evidence supporting the effectiveness of these metrics.
+- Explore the reasons behind the popularity of specific metrics over others.
+- Provide insights into trends in metric adoption across different software development methodologies.
+
+By addressing these objectives, this study seeks to contribute to a better understanding of how software metrics influence development practices and decision-making in software quality management.
 
 ### 1.3 Research Questions
 
-This study aims to answer the following research questions:
+To achieve the aforementioned objectives, the following research questions have been formulated:
 
 1. **RQ1**: What process and product metrics are most commonly used for quality evaluation and maintenance?
 2. **RQ2**: What empirical evidence supports the effectiveness of these metrics?
 3. **RQ3**: What factors contribute to the popularity of certain software metrics?
 
+These research questions guide the analysis and synthesis of findings from existing literature, providing a structured framework for evaluating software metrics in practice.
+
+---
+
 ## 2. Methodology
 
-### 2.1 Search Strategy
+### 2.1 Research Design
 
-A systematic search was conducted in digital libraries such as IEEE Xplore, ACM Digital Library, Scopus, and Google Scholar using the following keywords:
+This study follows the guidelines for conducting a systematic literature review (SLR) as outlined by Kitchenham and Charters (2007). The SLR methodology ensures a rigorous and unbiased approach to collecting, analyzing, and synthesizing existing research related to software metrics for quality evaluation and maintenance.
 
+The research process consists of three main phases:
+1. **Planning the Review** – Defining the research questions, identifying search strategies, and establishing inclusion and exclusion criteria.
+2. **Conducting the Review** – Searching for relevant studies, selecting articles based on predefined criteria, and extracting key data.
+3. **Reporting the Findings** – Analyzing the results, synthesizing key insights, and discussing implications for research and practice.
+
+This structured approach ensures the reliability and validity of the findings presented in this study.
+
+### 2.2 Search Strategy
+
+A comprehensive search was conducted in widely recognized digital libraries and academic databases, including:
+- IEEE Xplore
+- ACM Digital Library
+- Scopus
+- Elsevier
+- Google Scholar
+
+The search terms used to retrieve relevant literature included:
 - "software metrics for quality evaluation"
 - "fault prediction metrics in software engineering"
 - "software maintainability metrics"
 - "popularity of software quality metrics"
 
-### 2.2 Inclusion and Exclusion Criteria
+To refine the search, Boolean operators such as AND and OR were used to combine terms and retrieve the most relevant studies. Additionally, snowballing techniques were applied by reviewing references in selected articles to identify further relevant literature. Articles from high-impact journals and conferences were prioritized to ensure quality and relevance.
+
+### 2.3 Study Selection Criteria
+
+To ensure the quality and relevance of the selected studies, predefined inclusion and exclusion criteria were applied.
 
 **Inclusion Criteria:**
-
 - Peer-reviewed journal articles, conference papers, and systematic reviews.
 - Studies that empirically evaluate the effectiveness of software metrics.
 - Research discussing the adoption and popularity of software metrics in industrial and academic settings.
+- Studies published within the last three decades to ensure relevance to modern software engineering practices.
 
 **Exclusion Criteria:**
-
 - Studies that focus exclusively on business process metrics or performance measurement frameworks.
 - Articles without empirical validation or systematic analysis.
 - Papers written in languages other than English.
+- Studies with insufficient methodological rigor or small sample sizes that limit generalizability.
 
-### 2.3 Data Extraction and Quality Assessment
+### 2.4 Data Extraction and Quality Assessment
 
-The selected studies were evaluated based on:
+Each selected study was assessed based on:
+1. **Relevance** – The study's focus on software quality evaluation and maintenance.
+2. **Empirical Validation** – Whether the study provided experimental, case study, or real-world validation of metrics.
+3. **Methodological Rigor** – The clarity of the research design, sample size, and data collection process.
+4. **Impact and Citation Count** – The influence of the study within the research community, as indicated by citation counts and publication venue.
+5. **Industry Applicability** – The extent to which the study’s findings are relevant to practical software development environments.
 
-1. Relevance to software quality evaluation and maintenance.
-2. Empirical validation of metrics.
-3. Sample size and methodology used in studies.
-4. Citation count and impact factor of the journal/conference.
+A structured data extraction form was used to capture information such as study objectives, research methodology, key findings, limitations, and implications. These extracted data were synthesized to answer the research questions and provide meaningful insights into the adoption and effectiveness of software metrics.
+
+The quality of the selected studies was further assessed using the following criteria:
+- **Credibility:** Whether the study was published in reputable journals or conferences.
+- **Validity:** The soundness of the study’s methodology, including data collection techniques and statistical analysis.
+- **Reliability:** Whether the findings were replicable and consistent across multiple studies.
+
+By adhering to this systematic methodology, the study ensures a rigorous and transparent evaluation of the literature, contributing to a deeper understanding of software metrics for quality evaluation and maintenance.
 
 ## 3. Results and Analysis
 
