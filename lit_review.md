@@ -51,8 +51,8 @@ This structured approach ensures the reliability and validity of the findings pr
 A comprehensive search was conducted in widely recognized digital libraries and academic databases, including:
 - IEEE Xplore
 - ACM Digital Library
-- Scopus
 - Elsevier
+- Springer
 - Google Scholar
 
 The search terms used to retrieve relevant literature included:
