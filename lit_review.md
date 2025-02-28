@@ -101,49 +101,61 @@ By adhering to this systematic methodology, the study ensures a rigorous and tra
 
 ### 3.1 Object-Oriented Design Metrics
 
-#### Key Metrics:
+Object-oriented design metrics play a critical role in assessing software maintainability, complexity, and fault-proneness. These metrics are widely adopted in both academic and industrial contexts due to their ability to capture structural aspects of software systems.
 
-- **Weighted Methods per Class (WMC):** Measures class complexity based on the number of methods.
-- **Coupling Between Object Classes (CBO):** Measures dependencies between classes.
-- **Lack of Cohesion on Methods (LCOM):** Quantifies relatedness of methods within a class.
-- **Depth of Inheritance Tree (DIT):** Evaluates the number of inheritance levels in a class hierarchy.
-- **Response for a Class (RFC):** Counts the number of methods that can be executed in response to a message received by an object.
+#### Key Metrics and Justification
 
-#### Insights:
+| Metric | Description | Strengths | Weaknesses | Empirical Support | Reason for Inclusion/Exclusion |
+|--------|-------------|-----------|------------|------------------|-------------------------------|
+| Weighted Methods per Class (WMC) | Measures class complexity based on the number of methods | Predicts maintainability and complexity | High variability in interpretation | Basili et al. (1996) | Included due to strong maintainability correlation |
+| Coupling Between Object Classes (CBO) | Measures dependencies between classes | Identifies coupling issues, useful for modularity analysis | Does not account for indirect coupling | Chidamber & Kemerer (1994) | Included due to its relevance in modularity analysis |
+| Lack of Cohesion on Methods (LCOM) | Quantifies relatedness of methods in a class | Helps assess class design and maintainability | Difficult to apply in highly dynamic languages | Briand et al. (1999) | Included as it supports maintainability evaluation |
+| Depth of Inheritance Tree (DIT) | Evaluates the number of inheritance levels in a class hierarchy | Helps in understanding inheritance complexity | Deeper trees can lead to increased maintenance costs | Gyimothy et al. (2005) | Included as it captures class hierarchy complexity |
+| Response for a Class (RFC) | Counts the number of methods that can be executed in response to a message received by an object | Measures class complexity and its impact on maintainability | Can be misleading when applied to small-scale systems | Chidamber & Kemerer (1994) | Included as it provides insights into object behavior |
+| MOOD Metrics | Object-oriented design measurement framework | Comprehensive coverage of design principles | Complexity in application and interpretation | Harrison et al. (1998) | Excluded due to high complexity in analysis |
+| Class Size | Measures size of a class in terms of lines of code | Simple and widely used | Can be misleading in large codebases | El Emam et al. (2001) | Excluded due to lack of strong empirical correlation |
 
-- Studies (Basili et al., 1996; Chidamber & Kemerer, 1994) validate these metrics as strong indicators of fault-proneness and maintainability.
-- High WMC and CBO are associated with increased fault likelihood (Gyimothy et al., 2005).
-- RFC and LCOM provide actionable insights for improving class cohesion and reducing dependencies (Briand et al., 1999).
+---
 
 ### 3.2 Fault Prediction Metrics
 
-#### Key Metrics:
+Fault prediction metrics are widely used in software engineering to predict defect-prone modules and prioritize testing efforts. These metrics focus on complexity, defect occurrence, and change history.
 
-- **Cyclomatic Complexity:** Measures the complexity of a program’s control flow.
-- **Defect Density:** Tracks the number of defects per unit of code.
-- **Code Churn Metrics:** Analyzes changes in code, such as additions, modifications, and deletions.
-- **Halstead Metrics:** Assesses program readability and maintainability based on operator and operand usage.
+#### Key Metrics and Justification
 
-#### Insights:
+| Metric | Description | Strengths | Weaknesses | Empirical Support | Reason for Inclusion/Exclusion |
+|--------|-------------|-----------|------------|------------------|-------------------------------|
+| Cyclomatic Complexity | Measures the complexity of a program’s control flow | Strong predictor of testability and defects | Can be misleading for small functions | Catal & Diri (2009) | Included as it is a widely accepted fault predictor |
+| Defect Density | Tracks the number of defects per unit of code | Simple and widely used in industry | Does not account for severity of defects | Menzies et al. (2007) | Included due to strong industry relevance |
+| Code Churn Metrics | Analyzes changes in code, such as additions, modifications, and deletions | Effective in predicting defect-prone modules | May not work well for rapidly evolving codebases | Nagappan & Ball (2005) | Included as it is highly relevant in agile development |
+| Halstead Metrics | Assesses program readability and maintainability based on operator and operand usage | Provides detailed insights into code complexity | Can be difficult to interpret without additional context | Rahman et al. (2023) | Included as it captures software complexity efficiently |
+| Change Coupling | Measures the likelihood of code changes propagating across modules | Helps identify hidden dependencies | Difficult to automate effectively | Zimmermann et al. (2007) | Excluded due to limited automated tooling support |
+| Relative Code Churn | Measures the proportion of changed code relative to the total codebase | Good for identifying high-risk areas | Can be noisy in large projects | Nagappan et al. (2005) | Excluded due to inconsistencies in large-scale systems |
 
-- Cyclomatic complexity is a widely accepted fault predictor (Catal & Diri, 2009).
-- Code churn metrics effectively predict defects in agile development environments (Nagappan & Ball, 2005).
-- Halstead metrics offer valuable insights into code readability and maintainability (Rahman et al., 2023).
+---
 
 ### 3.3 Popularity and Quality Metrics in Software Components
 
-#### Key Metrics:
+Popularity and quality metrics assess the adoption, usability, and reliability of software components. These metrics are increasingly important in modern software engineering, especially in open-source and component-based development.
 
-- **Defect Density:** Evaluates software reliability.
-- **Reusability Metrics:** Measures adaptability of software components for reuse.
-- **Component Popularity Metrics:** Includes download counts, ratings, and community engagement.
-- **Documentation Quality Metrics:** Assesses the comprehensiveness and clarity of software documentation.
+#### Key Metrics and Justification
 
-#### Insights:
+| Metric | Description | Strengths | Weaknesses | Empirical Support | Reason for Inclusion/Exclusion |
+|--------|-------------|-----------|------------|------------------|-------------------------------|
+| Defect Density | Evaluates software reliability | Helps in determining component stability | May not reflect user experience | Sajnani et al. (2014) | Included due to its industry-wide usage |
+| Reusability Metrics | Measures adaptability of software components for reuse | Encourages modular design | Requires extensive data for accurate results | Mendes et al. (2005) | Included as it supports component-based development |
+| Component Popularity Metrics | Includes download counts, ratings, and community engagement | Reflects real-world adoption | Can be biased by external factors | Krishna & Bhatia (2022) | Included as it provides insights into real-world usage |
+| Documentation Quality Metrics | Assesses the comprehensiveness and clarity of software documentation | Strong correlation with ease of adoption | Subjective assessment may vary across projects | Baggen et al. (2012) | Included due to its strong influence on usability |
+| API Stability Metrics | Measures the frequency of changes in API behavior | Helps assess API reliability | Not always indicative of software quality | Tempero et al. (2010) | Excluded as stability does not directly correlate with popularity |
+| Code Readability Scores | Assesses the readability of source code using automated tools | Helps improve maintainability | No standardized evaluation method | Binkley & Schach (1998) | Excluded due to lack of universal assessment criteria |
 
-- Usability and ecosystem support influence component popularity (Sajnani et al., 2014).
-- Reusability metrics highlight the benefits of modular design (Mendes et al., 2005).
-- Well-documented components are preferred in open-source projects (Baggen et al., 2012).
+---
+
+### Summary
+
+The selected metrics provide a comprehensive foundation for evaluating software quality from multiple perspectives. Object-oriented metrics help assess design complexity and maintainability, fault prediction metrics enable proactive defect identification, and popularity and quality metrics capture user adoption trends. The empirical support for these metrics highlights their effectiveness in different software engineering contexts, making them valuable tools for researchers and practitioners alike.
+
+The excluded metrics were omitted due to limitations such as lack of automated tooling support, high complexity, or weak empirical correlation with software quality. These exclusions ensure that the selected metrics provide practical and reliable insights into software maintainability, fault prediction and component popularity.
 
 ## 4. Discussion
 
