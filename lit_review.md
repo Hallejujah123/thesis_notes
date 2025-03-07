@@ -104,13 +104,7 @@ The process of selecting relevant software metrics for quality evaluation and ma
 ### 3.1 Selection Process and Criteria
 
 #### Identification of Metrics
-The selection of metrics was based on an extensive review of peer-reviewed journal articles, conference papers, and systematic literature reviews from reputable sources such as IEEE Xplore, ACM Digital Library, Scopus, and Elsevier. The search was conducted using specific keywords, including:
-- "software metrics for quality evaluation"
-- "fault prediction metrics in software engineering"
-- "software maintainability metrics"
-- "popularity of software quality metrics"
-
-Through this search, numerous metrics were identified, and their relevance to quality evaluation and maintenance was assessed. The studies that provided empirical validation of these metrics were prioritized to ensure the selection was backed by real-world data.
+Numerous metrics were identified, and their relevance to quality evaluation and maintenance was assessed. The studies that provided empirical validation of these metrics were prioritized to ensure the selection was backed by real-world data.
 
 #### Criteria for Selection
 To ensure the chosen metrics were relevant, effective, and practical, the following selection criteria were applied:
