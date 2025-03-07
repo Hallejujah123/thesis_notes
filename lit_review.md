@@ -99,9 +99,36 @@ By adhering to this systematic methodology, the study ensures a rigorous and tra
 
 ## 3. Results and Analysis
 
-### 3.1 Object-Oriented Design Metrics
+The process of selecting relevant software metrics for quality evaluation and maintenance was carried out through a structured methodology. This section details the identification process, the criteria for selection, and a comparative analysis of the chosen and excluded metrics.
 
-Object-oriented design metrics play a critical role in assessing software maintainability, complexity, and fault-proneness. These metrics are widely adopted in both academic and industrial contexts due to their ability to capture structural aspects of software systems.
+### 3.1 Selection Process and Criteria
+
+#### Identification of Metrics
+The selection of metrics was based on an extensive review of peer-reviewed journal articles, conference papers, and systematic literature reviews from reputable sources such as IEEE Xplore, ACM Digital Library, Scopus, and Elsevier. The search was conducted using specific keywords, including:
+- "software metrics for quality evaluation"
+- "fault prediction metrics in software engineering"
+- "software maintainability metrics"
+- "popularity of software quality metrics"
+
+Through this search, numerous metrics were identified, and their relevance to quality evaluation and maintenance was assessed. The studies that provided empirical validation of these metrics were prioritized to ensure the selection was backed by real-world data.
+
+#### Criteria for Selection
+To ensure the chosen metrics were relevant, effective, and practical, the following selection criteria were applied:
+
+1. **Empirical Validation** – Metrics had to be supported by research studies demonstrating their effectiveness in assessing software quality.
+2. **Predictive Power** – Metrics were chosen based on their ability to predict software maintainability, defect-proneness, or component usability.
+3. **Industry Adoption** – Metrics commonly used in industry tools or frameworks were prioritized.
+4. **Comprehensiveness** – The selected metrics needed to cover multiple aspects of software quality, including design complexity, fault prediction, and component quality.
+5. **Ease of Interpretation** – Metrics that are easier to compute and interpret were favored to ensure practical usability.
+6. **Tool Support** – The availability of automated tools for measuring these metrics was considered an essential factor for industry relevance.
+
+Using these criteria, three main categories of software metrics were analyzed: Object-Oriented Design Metrics, Fault Prediction Metrics, and Popularity & Quality Metrics in Software Components.
+
+---
+
+### 3.2 Object-Oriented Design Metrics
+
+Object-oriented design metrics are widely used to evaluate software structure, maintainability, and complexity. These metrics help developers assess modularity, coupling, cohesion, and inheritance depth, which impact the long-term maintainability of software systems.
 
 #### Key Metrics and Justification
 
@@ -117,9 +144,9 @@ Object-oriented design metrics play a critical role in assessing software mainta
 
 ---
 
-### 3.2 Fault Prediction Metrics
+### 3.3 Fault Prediction Metrics
 
-Fault prediction metrics are widely used in software engineering to predict defect-prone modules and prioritize testing efforts. These metrics focus on complexity, defect occurrence, and change history.
+Fault prediction metrics are used to identify defect-prone software modules, allowing teams to allocate testing efforts more efficiently. These metrics focus on complexity, historical defect rates, and code changes.
 
 #### Key Metrics and Justification
 
@@ -134,9 +161,9 @@ Fault prediction metrics are widely used in software engineering to predict defe
 
 ---
 
-### 3.3 Popularity and Quality Metrics in Software Components
+### 3.4 Popularity and Quality Metrics in Software Components
 
-Popularity and quality metrics assess the adoption, usability, and reliability of software components. These metrics are increasingly important in modern software engineering, especially in open-source and component-based development.
+Popularity and quality metrics are essential for evaluating software components, especially in open-source ecosystems. These metrics help developers assess adoption trends, documentation quality, and reusability.
 
 #### Key Metrics and Justification
 
